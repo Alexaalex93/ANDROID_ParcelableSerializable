@@ -12,9 +12,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Persona p = new Persona("Fausto", 55);
+        PersonaParcelable pp = new PersonaParcelable("alex", "fernandez", 22);
 
         Intent i2 = new Intent(this, Main2Activity.class);
         i2.putExtra("persona", p);
+        i2.putExtra("personapp", pp);
         startActivity(i2);
     }
 }

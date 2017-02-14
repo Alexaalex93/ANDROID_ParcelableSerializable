@@ -13,6 +13,9 @@ public class Main2Activity extends AppCompatActivity {
 
         Intent i = getIntent();
         Persona p = (Persona) i.getExtras().get("persona");
+
+        PersonaParcelable pp = (PersonaParcelable) i.getExtras().get("personapp");
+
         //i.getParcelableExtra("persona"); //Así recogemos el objeto que hemos enviado
     }
 }
